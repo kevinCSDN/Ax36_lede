@@ -10,9 +10,9 @@
 # Description: 该文件默认的是在openwrt目录下操作
 #
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings    # 设置密码为空
-sed -i 's/PATCHVER:=6.1/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
-sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
-sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
+sed -i 's/PATCHVER:=6.1/PATCHVER:=5.10/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
+sed -i 's/PATCHVER:=5.15/PATCHVER:=5.10/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
+sed -i 's/PATCHVER:=5.10/PATCHVER:=5.10/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
 # Modify default IP
 rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/luci/applications/luci-app-openclash
